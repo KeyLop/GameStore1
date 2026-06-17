@@ -1,0 +1,308 @@
+/* ===== ГЛОБАЛЬНЫЙ ТЁМНЫЙ ФОН ===== */
+.root {
+    -fx-background-color: #12121e;
+}
+
+VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
+    -fx-background-color: #12121e;
+}
+
+/* ===== TABPANE ===== */
+.tab-pane {
+    -fx-background-color: #12121e;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #12121e !important;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: #12121e !important;
+}
+
+.tab-pane:focused .tab-header-area .headers-region {
+    -fx-background-color: #12121e !important;
+}
+
+.tab {
+    -fx-background-color: #1a1a30;
+    -fx-text-fill: #9999bb;
+    -fx-padding: 8 20;
+    -fx-background-insets: 0;
+}
+
+.tab:selected {
+    -fx-background-color: #222244;
+    -fx-text-fill: #d4d4f0;
+    -fx-border-color: #3b6ea5;
+    -fx-border-width: 0 0 2 0;
+}
+
+.tab-content-area {
+    -fx-background-color: #12121e !important;
+}
+
+/* ===== LISTVIEW ===== */
+.list-view {
+    -fx-background-color: #0e0e1a !important;
+    -fx-control-inner-background: #0e0e1a !important;
+    -fx-border-color: #1e1e34;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.list-view .list-cell {
+    -fx-background-color: transparent !important;
+    -fx-text-fill: #d4d4e8;
+    -fx-padding: 10 14;
+    -fx-border-color: #1a1a30;
+    -fx-border-width: 0 0 1 0;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #2d3d5a !important;
+    -fx-text-fill: white;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #222244 !important;
+}
+
+.list-view .scroll-bar {
+    -fx-background-color: #12121e;
+}
+
+/* ===== TABLEVIEW ===== */
+.table-view {
+    -fx-background-color: #0e0e1a !important;
+    -fx-control-inner-background: #0e0e1a !important;
+    -fx-border-color: #1e1e34;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1a1a30 !important;
+    -fx-text-fill: #d4d4f0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #d4d4f0;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #d4d4e8;
+    -fx-border-color: #1a1a30;
+    -fx-background-color: transparent !important;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2d3d5a !important;
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-text-fill: white !important;
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: #12121e;
+}
+
+/* ===== КНОПКИ ===== */
+.button {
+    -fx-background-color: #2d2d44;
+    -fx-text-fill: #d4d4e8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #3d3d5c;
+}
+
+.button-primary {
+    -fx-background-color: #3b6ea5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-primary:hover {
+    -fx-background-color: #4a80b5;
+}
+
+.button-success {
+    -fx-background-color: #2d7d6f;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-success:hover {
+    -fx-background-color: #3a9a88;
+}
+
+.button-danger {
+    -fx-background-color: #8a3a3a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button-danger:hover {
+    -fx-background-color: #a84444;
+}
+
+/* ===== ПОЛЯ ВВОДА ===== */
+.text-field, .password-field {
+    -fx-background-color: #1e1e34;
+    -fx-text-fill: #e0e0f0;
+    -fx-prompt-text-fill: #666688;
+    -fx-background-radius: 10;
+    -fx-border-color: #2e2e4a;
+    -fx-border-radius: 10;
+    -fx-padding: 10 16;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #3b6ea5;
+}
+
+/* ===== ЛЕЙБЛЫ ===== */
+.label {
+    -fx-text-fill: #d4d4e8;
+}
+
+.label-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e8e8ff;
+}
+
+/* ===== РАЗДЕЛИТЕЛИ ===== */
+.separator {
+    -fx-background-color: #2a2a44;
+}
+
+/* ===== СООБЩЕНИЯ ===== */
+.message-success {
+    -fx-text-fill: #6fcf97;
+}
+
+.message-error {
+    -fx-text-fill: #f28b82;
+}
+/* ===== ТАБЛИЦА — ПОЛНОСТЬЮ ТЁМНАЯ ===== */
+.table-view .column-header-background {
+    -fx-background-color: #1a1a30;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: transparent !important;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #0a0a14 !important;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #0e0e1a !important;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #2d3d5a !important;
+}
+
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: white !important;
+}
+
+.table-view .table-cell {
+    -fx-background-color: transparent !important;
+    -fx-text-fill: #d4d4e8;
+    -fx-border-color: transparent;
+    -fx-padding: 8 10;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #d4d4f0;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1a1a30 !important;
+    -fx-border-color: #2a2a44;
+    -fx-border-width: 0 0 1 0;
+}
+/* ============================================================
+   СПЕЦИАЛЬНО ДЛЯ АДМИН-ПАНЕЛИ — 100% УБИРАЕТ БЕЛЫЙ ФОН
+   ============================================================ */
+
+/* ФОН ВСЕЙ АДМИН-ПАНЕЛИ */
+.admin-root {
+    -fx-background-color: #12121e;
+}
+
+/* ТАБЛИЦА — ПОЛНОСТЬЮ ТЁМНАЯ */
+.table-view {
+    -fx-background-color: #0e0e1a !important;
+    -fx-control-inner-background: #0e0e1a !important;
+    -fx-border-color: #1e1e34 !important;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1a1a30 !important;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1a1a30 !important;
+    -fx-border-color: #2a2a44 !important;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #d4d4f0 !important;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: transparent !important;
+    -fx-border-color: #1a1a30 !important;
+    -fx-border-width: 0 0 1 0;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #0a0a14 !important;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #0e0e1a !important;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #2d3d5a !important;
+}
+
+.table-view .table-row-cell:selected .table-cell {
+    -fx-text-fill: white !important;
+}
+
+.table-view .table-cell {
+    -fx-background-color: transparent !important;
+    -fx-text-fill: #d4d4e8 !important;
+    -fx-border-color: transparent !important;
+    -fx-padding: 8 10;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent !important;
+}
+
+.table-view .scroll-bar {
+    -fx-background-color: #12121e;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #2d2d44;
+    -fx-background-radius: 10;
+}

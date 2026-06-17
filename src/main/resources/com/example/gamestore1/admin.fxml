@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.gamestore1.AdminController"
+      style="-fx-background-color: #12121e; -fx-padding: 20; -fx-spacing: 15;">
+
+    <Label text="⚙️ Админ-панель" style="-fx-text-fill: #e8e8ff; -fx-font-size: 24; -fx-font-weight: bold;"/>
+
+    <!-- ТАБЛИЦА С КОЛОНКАМИ -->
+    <TableView fx:id="gamesTable" VBox.vgrow="ALWAYS"
+               style="-fx-background-color: #0e0e1a; -fx-control-inner-background: #0e0e1a; -fx-border-color: #1e1e34; -fx-border-radius: 10; -fx-background-radius: 10;">
+
+        <columns>
+            <!-- КОЛОНКА ID -->
+            <TableColumn text="ID" prefWidth="60">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- КОЛОНКА НАЗВАНИЕ -->
+            <TableColumn text="Название" prefWidth="200">
+                <cellValueFactory>
+                    <PropertyValueFactory property="title"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- КОЛОНКА ЦЕНА -->
+            <TableColumn text="Цена, ₽" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <!-- КОЛОНКА ОПИСАНИЕ -->
+            <TableColumn text="Описание" prefWidth="300">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <Separator style="-fx-background-color: #2a2a44; -fx-padding: 5 0;"/>
+
+    <Label text="➕ Добавить новую игру" style="-fx-text-fill: #d4d4e8; -fx-font-size: 16; -fx-font-weight: bold;"/>
+
+    <GridPane hgap="12" vgap="10" style="-fx-padding: 5 0; -fx-background-color: #12121e;">
+        <Label text="Название:" style="-fx-text-fill: #aab; -fx-font-size: 13;" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                   style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 8; -fx-border-color: #2e2e4a; -fx-border-radius: 8; -fx-padding: 8 14;"/>
+
+        <Label text="Цена:" style="-fx-text-fill: #aab; -fx-font-size: 13;" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="priceField" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                   style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 8; -fx-border-color: #2e2e4a; -fx-border-radius: 8; -fx-padding: 8 14;"/>
+
+        <Label text="Описание:" style="-fx-text-fill: #aab; -fx-font-size: 13;" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="descField" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                   style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 8; -fx-border-color: #2e2e4a; -fx-border-radius: 8; -fx-padding: 8 14;"/>
+    </GridPane>
+
+    <Button text="➕ Добавить" onAction="#addGame"
+            style="-fx-background-color: #2d7d6f; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14; -fx-padding: 10 30; -fx-background-radius: 10; -fx-cursor: hand;" maxWidth="Infinity"/>
+
+    <Label fx:id="messageLabel" style="-fx-text-fill: #6fcf97; -fx-font-size: 14;"/>
+</VBox>

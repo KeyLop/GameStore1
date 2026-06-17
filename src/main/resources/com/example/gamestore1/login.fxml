@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.gamestore1.LoginController"
+      style="-fx-background-color: #12121e; -fx-padding: 40; -fx-spacing: 15;" alignment="CENTER">
+
+    <Label text="🎮 GameStore" style="-fx-text-fill: #e8e8ff; -fx-font-size: 32; -fx-font-weight: bold;"/>
+
+    <Label fx:id="errorLabel" style="-fx-text-fill: #f28b82; -fx-font-size: 14;" visible="false"/>
+
+    <TabPane tabClosingPolicy="UNAVAILABLE" style="-fx-background-color: transparent;">
+
+        <!-- ВКЛАДКА ВХОД -->
+        <Tab text="Вход" style="-fx-background-color: #1a1a30; -fx-text-fill: #9999bb;">
+            <VBox spacing="12" style="-fx-background-color: #12121e; -fx-padding: 15;">
+                <TextField fx:id="loginField" promptText="👤 Логин"
+                           style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <PasswordField fx:id="passField" promptText="🔒 Пароль"
+                               style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <Button text="Войти" onAction="#handleLogin"
+                        style="-fx-background-color: #3b6ea5; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14; -fx-padding: 10 30; -fx-background-radius: 10; -fx-cursor: hand;" maxWidth="Infinity"/>
+            </VBox>
+        </Tab>
+
+        <!-- ВКЛАДКА РЕГИСТРАЦИЯ -->
+        <Tab text="Регистрация" style="-fx-background-color: #1a1a30; -fx-text-fill: #9999bb;">
+            <VBox spacing="12" style="-fx-background-color: #12121e; -fx-padding: 15;">
+                <TextField fx:id="regNameField" promptText="👤 Имя"
+                           style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <TextField fx:id="regEmailField" promptText="📧 Email"
+                           style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <TextField fx:id="regLoginField" promptText="👤 Логин"
+                           style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <PasswordField fx:id="regPassField" promptText="🔒 Пароль"
+                               style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <PasswordField fx:id="regConfirmField" promptText="🔒 Повторите пароль"
+                               style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;"/>
+                <Button text="Зарегистрироваться" onAction="#handleRegister"
+                        style="-fx-background-color: #2d7d6f; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14; -fx-padding: 10 30; -fx-background-radius: 10; -fx-cursor: hand;" maxWidth="Infinity"/>
+            </VBox>
+        </Tab>
+    </TabPane>
+
+    <Label text="🔹 Демо: admin / 123456" style="-fx-text-fill: #555577; -fx-font-size: 12;"/>
+</VBox>

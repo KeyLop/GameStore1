@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.gamestore1.FriendsController"
+      stylesheets="@styles.css"
+      style="-fx-background-color: #12121e; -fx-padding: 20; -fx-spacing: 15;">
+
+    <Label text="👥 Друзья" style="-fx-text-fill: #e8e8ff; -fx-font-size: 24; -fx-font-weight: bold;"/>
+
+    <HBox spacing="12">
+        <TextField fx:id="searchField" promptText="🔍 Поиск пользователей..."
+                   style="-fx-background-color: #1e1e34; -fx-text-fill: #e0e0f0; -fx-prompt-text-fill: #666688; -fx-background-radius: 10; -fx-border-color: #2e2e4a; -fx-border-radius: 10; -fx-padding: 10 16;" HBox.hgrow="ALWAYS"/>
+        <Button text="Найти" onAction="#searchUsers"
+                style="-fx-background-color: #2a2a44; -fx-text-fill: #d4d4e8; -fx-font-weight: bold; -fx-padding: 8 20; -fx-background-radius: 8; -fx-cursor: hand;"/>
+    </HBox>
+
+    <TabPane tabClosingPolicy="UNAVAILABLE" style="-fx-background-color: transparent;">
+        <Tab text="👥 Все друзья">
+            <VBox style="-fx-background-color: #12121e; -fx-padding: 5;">
+                <ListView fx:id="friendsListView" style="-fx-background-color: #0e0e1a; -fx-border-color: #1e1e34; -fx-border-radius: 10; -fx-background-radius: 10;"/>
+            </VBox>
+        </Tab>
+        <Tab text="📩 Входящие">
+            <VBox style="-fx-background-color: #12121e; -fx-padding: 5;">
+                <ListView fx:id="requestsListView" style="-fx-background-color: #0e0e1a; -fx-border-color: #1e1e34; -fx-border-radius: 10; -fx-background-radius: 10;"/>
+            </VBox>
+        </Tab>
+        <Tab text="📤 Исходящие">
+            <VBox style="-fx-background-color: #12121e; -fx-padding: 5;">
+                <ListView fx:id="sentListView" style="-fx-background-color: #0e0e1a; -fx-border-color: #1e1e34; -fx-border-radius: 10; -fx-background-radius: 10;"/>
+            </VBox>
+        </Tab>
+    </TabPane>
+
+    <Label fx:id="messageLabel" style="-fx-text-fill: #6fcf97; -fx-font-size: 14;"/>
+</VBox>
