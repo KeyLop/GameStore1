@@ -1,4 +1,4 @@
-/* ===== ГЛОБАЛЬНЫЙ ТЁМНЫЙ ФОН ===== */
+/* css */
 .root {
     -fx-background-color: #12121e;
 }
@@ -7,7 +7,6 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-background-color: #12121e;
 }
 
-/* ===== TABPANE ===== */
 .tab-pane {
     -fx-background-color: #12121e;
     -fx-border-color: transparent;
@@ -44,7 +43,6 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-background-color: #12121e !important;
 }
 
-/* ===== LISTVIEW ===== */
 .list-view {
     -fx-background-color: #0e0e1a !important;
     -fx-control-inner-background: #0e0e1a !important;
@@ -74,7 +72,6 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-background-color: #12121e;
 }
 
-/* ===== TABLEVIEW ===== */
 .table-view {
     -fx-background-color: #0e0e1a !important;
     -fx-control-inner-background: #0e0e1a !important;
@@ -110,7 +107,6 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-background-color: #12121e;
 }
 
-/* ===== КНОПКИ ===== */
 .button {
     -fx-background-color: #2d2d44;
     -fx-text-fill: #d4d4e8;
@@ -153,7 +149,6 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-background-color: #a84444;
 }
 
-/* ===== ПОЛЯ ВВОДА ===== */
 .text-field, .password-field {
     -fx-background-color: #1e1e34;
     -fx-text-fill: #e0e0f0;
@@ -168,7 +163,6 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-border-color: #3b6ea5;
 }
 
-/* ===== ЛЕЙБЛЫ ===== */
 .label {
     -fx-text-fill: #d4d4e8;
 }
@@ -179,12 +173,10 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-text-fill: #e8e8ff;
 }
 
-/* ===== РАЗДЕЛИТЕЛИ ===== */
 .separator {
     -fx-background-color: #2a2a44;
 }
 
-/* ===== СООБЩЕНИЯ ===== */
 .message-success {
     -fx-text-fill: #6fcf97;
 }
@@ -192,7 +184,7 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
 .message-error {
     -fx-text-fill: #f28b82;
 }
-/* ===== ТАБЛИЦА — ПОЛНОСТЬЮ ТЁМНАЯ ===== */
+
 .table-view .column-header-background {
     -fx-background-color: #1a1a30;
 }
@@ -233,16 +225,11 @@ VBox, HBox, BorderPane, AnchorPane, GridPane, ScrollPane, StackPane {
     -fx-border-color: #2a2a44;
     -fx-border-width: 0 0 1 0;
 }
-/* ============================================================
-   СПЕЦИАЛЬНО ДЛЯ АДМИН-ПАНЕЛИ — 100% УБИРАЕТ БЕЛЫЙ ФОН
-   ============================================================ */
 
-/* ФОН ВСЕЙ АДМИН-ПАНЕЛИ */
 .admin-root {
     -fx-background-color: #12121e;
 }
 
-/* ТАБЛИЦА — ПОЛНОСТЬЮ ТЁМНАЯ */
 .table-view {
     -fx-background-color: #0e0e1a !important;
     -fx-control-inner-background: #0e0e1a !important;
