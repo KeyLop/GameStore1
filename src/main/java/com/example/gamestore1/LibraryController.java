@@ -1,3 +1,6 @@
+/**
+ * Класс для подключения к базе данных SQL Server
+ */
 package com.example.gamestore1;
 
 import javafx.fxml.FXML;
